@@ -1,0 +1,21 @@
+server:
+  port: 80
+logging:
+  level:
+    web: debug
+spring:
+  application:
+    name: cloud-order-feign-service
+eureka:
+  client:
+    #表示是否将自己注册进Eurekaserver默认为true。
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
+# 为指定的接口设置超时时间
+feign:
+  client:
+    config:
+      payment-core:
+        read-timeout: 1000
+        connect-timeout: 1000

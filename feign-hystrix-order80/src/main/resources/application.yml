@@ -1,0 +1,17 @@
+server:
+  port: 80
+logging:
+  level:
+    web: debug
+spring:
+  application:
+    name: cloud-order-hystrix-feign-service
+eureka:
+  client:
+    #表示是否将自己注册进Eurekaserver默认为true。
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+feign:
+  circuitbreaker:
+    enabled: true
