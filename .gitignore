@@ -1,0 +1,16 @@
+# Project exclude paths
+/commons/target/
+/config-center-3344/target/
+/config-client-3355/target/
+/config-client-3366/target/
+/feign-hystrix-order80/target/
+/feign-order80/target/
+/gateway-gateway9527/target/
+/hygtrix-payment8001/target/
+/hystrix-dashboard9001/target/
+/order80/target/
+/payment8001/target/
+/payment8002/target/
+/server7001/target/
+/server7002/target/
+/stream-rabbitmq-provider8801/target/
